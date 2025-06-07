@@ -1,0 +1,269 @@
+body {
+    background-color: #141414;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: linear-gradient(
+        to bottom,
+    rgba(0, 0, 0, 0.7) 0%
+    rgba(0, 0, 0, 0) 100%
+    );
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e50914;
+            text-decoration: none;
+        }
+/* Navigation links */
+.navbar-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+/* Right side icons and profile */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* FontAwesome icons */
+.navbar-right i {
+    color: #e5e5e5;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar-right i:hover {
+    color: #ffffff;
+}
+.profile-details-page{
+    background-color:#141414;
+    min-height: 100vh;
+    color:#fff;
+
+}
+.profile-details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 30px;
+}  
+.profile-header{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.profile-avatar-image{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+.profile-avatar-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-info{
+    flex:1;
+}
+.profile-name{
+    font-size: 32px;
+    margin-bottom: 8px;
+
+}
+.profile-email{
+    color:#fff;
+    margin-bottom: 16px;
+}
+
+.membership-info{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.membership-badge{
+    background-color:red;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;;
+}
+
+.membership-details{
+    color:white;
+    font-size: 14px;
+}
+
+/* profile section */
+.profile-section {
+    margin-bottom: 40px;
+
+
+}
+.profile-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color:#e5e5e5;
+}
+
+/* SETTING GRID */
+.setting-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.setting-items{
+    background-color: #2f2f2f;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+.settings-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.settings-header h3 {
+    font-size: 20px;
+    color: #e5e5e5;
+}
+.btn-change{
+    background-color:transparent;
+    border: 1px solid #808080;
+    color: #808080;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn-change:hover {
+    background-color: #fff;
+    color: #fff;
+}
+
+
+.setting-details{
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* responsivnesss */
+@media (max-width: 768px){
+    .profile-header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .membership-info{
+    justify-content: center ; 
+    }
+
+    .setting-grid{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+/* footer */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+.footer {
+  background-color: #000;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.footer-links div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.service-code {
+  background: transparent;
+  color: #ccc;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.service-code:hover {
+  background-color: #333;
+}
+
+footer p {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+.footer p a {
+  color: #e50914;
+  text-decoration: none;
+}
